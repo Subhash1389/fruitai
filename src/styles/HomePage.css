@@ -1,0 +1,98 @@
+/* General styling for the app */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  
+}
+
+body {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #d6a4ff, #00ffdc);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  text-align: center;
+}
+
+h1 {
+  width: 100%;
+  font-size: 2rem;
+  color: white;
+}
+
+.tagline {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  height: 100px;
+  width: 170px;
+  font-size: 1.2rem;
+  color: #555;
+  cursor: pointer;
+  transition: 0.3s ease;
+  
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.chat {
+  background-color: #ffeca1;
+  color: #d400ff;
+}
+
+.translate {
+  background-color: #b1e4ff;
+  color: #007bff;
+}
+
+.faqs {
+  background-color: #ffdaff;
+  color: #003f7d;
+}
+
+.about {
+  background-color: #ffd1dc;
+  color: #900c3f;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .button-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .button {
+    height: 80px;
+  }
+}
